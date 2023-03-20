@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: black;
+    padding: 20px;
+    max-width: 100vw;
+}
+.navbar .logo {
+    color: white;
+    font-size: 25px;
+}
+.navbar .logo span {
+    font-size: 35px;
+    margin-right: 10px;
+}
+.navbar .itmes a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+.hero {
+    display: flex;
+    background-image: url(../img/backgraund.jpg);
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.hero .back {
+    color: white;
+    font-size: 35px;
+}
+.hero .back span {
+    font-size: 45px;
+    background-color: rgba(128, 128, 128, 0.493);
+    padding: 5px;
+    margin-right: 10px;
+}
+.project , .employd, .contact, .Abaout{
+    padding: 0px 20px;
+}
+.project h1 , .employd h1, .contact h1, .Abaout h1{
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.project .projects-continer ,.employd .employd-continer{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.project .projects-continer .card {
+    display: flex;
+    position: relative;
+    width: 48%;
+}
+.project .projects-continer .card p{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.project .projects-continer .card img ,.employd .employd-continer .card img{
+    width: 100%;
+}
+.employd .employd-continer .card {
+    width: 48%;
+}
+.employd .employd-continer .card h2 {
+    margin: 10px 0;
+}
+.employd .employd-continer .card h4 {
+    color: gray;
+}
+.employd .employd-continer .card p {
+    margin: 10px 0;
+}
+.employd .employd-continer .card input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.contact form {
+    width: 100%;
+    margin-top: 30px;
+}
+.contact input , .contact textarea {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.contact textarea {
+    height: 50px;
+}
+.contact .inpu {
+    width: 10%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 27px;
+}
+.Abaout p {
+    text-align: justify;
+    padding-top: 10px; 
+}
+footer { 
+    max-width: 100vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+footer p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 8px;
+    font-size: 18px;
+    font-family: fantasy;
+}
+footer span { 
+    color: yellow;
+}
+@media (max-width:1305px){
+    .project .projects-continer .card {
+
+        width: 100%;
+    }
+    .employd .employd-continer .card {
+        width: 100%;
+    }
+}
+@media (max-width:800px){
+    .navbar .logo {
+        font-size: 20px;
+    }
+    .navbar .logo span {
+        font-size: 30px;
+        margin-right: 8px;
+    }
+    .navbar .itmes a{
+        font-size: 18px;
+        margin-left: 40px;
+    }
+}
+@media (max-width:640px){
+    .navbar .logo {
+        font-size: 16px;
+    }
+    .navbar .logo span {
+        font-size: 25px;
+        margin-right: 6px;
+    }
+    .navbar .itmes a{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
